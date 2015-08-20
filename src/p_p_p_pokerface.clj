@@ -26,7 +26,7 @@
   (= (sort (vals (frequencies (map rank hand)))) '(2 3)))
 
 (defn two-pairs? [hand]
-  nil)
+  (= '(2 2) (take 2 (vals (frequencies (map rank hand))))))
 
 (defn straight? [hand]
   nil)
@@ -36,4 +36,3 @@
 
 (defn value [hand]
   nil)
-
